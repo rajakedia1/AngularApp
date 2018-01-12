@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Leaders } from '../shared/leader';
+import { Leader } from '../shared/leader';
 
 import { LEADER } from '../shared/leaders';
 
