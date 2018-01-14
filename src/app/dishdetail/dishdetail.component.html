@@ -13,7 +13,7 @@
                     <h3>{{dish.name | uppercase}}</h3>
                 </md-card-title>
             </md-card-header>
-            <img md-card-image src={{dish.image}} alt={{dish.name}}>
+            <img md-card-image src="{{BaseURL + dish.image}}" alt={{dish.name}}>
             <md-card-content>
                 <p>{{dish.description}}</p>
             </md-card-content>
@@ -68,7 +68,10 @@
                   </md-hint>
                 </md-input-container>
                   
+                  
+                  <md-slider thumbLabel tickInterval="1" min="1" max="5" step="1" value="5" mdInput formControlName="rating" ></md-slider>
                 </p>
+                <!--
                 
                     <table class="form-size">
                     
@@ -80,7 +83,7 @@
                     </md-select>
                     </td>
                     </table>
-                   
+                   -->
                 <p>
                 <md-input-container class="full-width">
                   <textarea mdInput formControlName="comment" placeholder="Your Comment" rows=12></textarea>
