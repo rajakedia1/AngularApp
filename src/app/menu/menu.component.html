@@ -18,9 +18,13 @@
             </md-grid-tile>
         </md-grid-list>
     </div>
-    <div [hidden]="dishes">
+    <div [hidden]="dishes || errorMess">
         <md-spinner></md-spinner>
         <h4>Loading... Please wait</h4>
+    </div>
+    <div *ngIf="errMess">
+        <h2>Error</h2>
+        <h4>{{errorMess}}</h4>
     </div>
     <!--
     <app-dishdetail [dish]="selectedDish"></app-dishdetail>
